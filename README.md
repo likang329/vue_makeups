@@ -31,3 +31,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
     less
 
 展示地址： [vue-makeups](https://likang329.github.io/vue_makeups/demo/index.html "demo")
+
+也可扫描二维码查看：
+
+ ![](https://github.com/likang329/vue_makeups/blob/master/static/image/demoRwm.png "demo二维码")
