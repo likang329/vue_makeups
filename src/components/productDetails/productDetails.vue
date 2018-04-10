@@ -47,7 +47,7 @@
   		</div>
   		<router-view :productData="productData"></router-view>
   	</div>
-  	<div v-show="popupShowHide" class="productSwiper-wrap">
+  	<div v-if="popupShowHide" class="productSwiper-wrap">
   		<Swiper v-if="productData.imgs.length > 0" :autoPlay='false' :showIndicator='true'>
         <Slide v-for="(item,index) in productData.imgs" :key="index" style="height:100%">
         	<div class="img-wrap">
