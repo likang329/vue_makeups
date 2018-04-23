@@ -289,7 +289,7 @@
 			.search-content-tab {
 				position: fixed;
 				left: 0;
-				top: 46px;
+				top: 56px;
 				width: 100%;
 				background: #fff;
 				z-index: 9;
@@ -328,7 +328,7 @@
 			}
 		}
 		.search-content {
-			padding-top: 87px;
+			padding-top: 96px;
 		}
 		.search-content-no {
 			width: 100%;
