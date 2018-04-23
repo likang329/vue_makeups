@@ -37,7 +37,9 @@
     data () {
       return {
         // 数据
-        tryOutData: {}
+        tryOutData: {
+        	lists: []
+        }
       }
 		},
 		watch: {
@@ -47,7 +49,6 @@
 			// 过滤器
 	    formatDate (time) {
         var date = new Date(time * 1000)
-        console.log(date,'123')
         return formatDate(date, 'yyyy-MM-dd hh:mm')
 	    }
    	},
@@ -65,7 +66,7 @@
 		  // 方法
 		  tryOutObtain () {
 		  	var _this = this;
-		  	this.$http.get(API_PROXY, {
+		  	this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: 1005
 		  		}

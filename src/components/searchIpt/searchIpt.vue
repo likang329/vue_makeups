@@ -121,7 +121,7 @@
 	  			this.$refs.searchContent.scrollIntoView(true)
 	  			this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset')
 	  		}
-		  	this.$http.get(API_PROXY, {
+		  	this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: 1013,
 		  			page: this.pagesIndex,

@@ -106,7 +106,7 @@
 		  // 方法
 		  productDetailsData () {
 		  	var _this = this
-		  	this.$http.get(API_PROXY, {
+		  	this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: 1011,
 		  			id: _this.productId

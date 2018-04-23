@@ -92,14 +92,15 @@
 		  // 方法
 		  homeData () {
 		  	var _this = this;
-		  	_this.$http.get(API_PROXY, {
+		  	_this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: 1001
 		  		}
 		  	})
 		  	.then((res) => {
 		  		_this.homeDatas = res.data.de;
-		  		console.log(_this.homeDatas, '首页数据')
+		  		console.log(_this.homeDatas)
+		  		console.log(res, '首页数据')
 		  	})
 		  	.catch((err) => {
 		  		console.log(err)

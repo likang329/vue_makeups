@@ -9,6 +9,7 @@ module.exports = {
     host: 'localhost',
 		env: require('./dev.env'),
 		port: 8080,
+//		secure: false,
 		autoOpenBrowser: true,
 		
     // Paths
@@ -16,10 +17,10 @@ module.exports = {
     assetsPublicPath: '/',
     proxyTable: {
     	'/api': {
-        target: 'https://bird.ioliu.cn/v1/?url=http://misc.kimiss.com/common/wxapi/commonwx/104?', // 设置你调用的接口域名和端口号 
+        target: 'http://misc.kimiss.com/common/wxapi/', // 设置你调用的接口域名和端口号 
         changeOrigin: true,     // 跨域
         pathRewrite: {
-          '^/api': '' // 这里理解成用‘/api’代替target里面的地址
+          '^/api': '' // 这里理解成用'/api'代替target里面的地址
         }
       }
     },
@@ -33,7 +34,7 @@ module.exports = {
     // Paths
     assetsRoot: path.resolve(__dirname, '../dist'),
     assetsSubDirectory: 'static',
-    assetsPublicPath: '/',
+    assetsPublicPath: './',
 
     /**
      * Source Maps

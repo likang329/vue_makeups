@@ -68,7 +68,7 @@
 		methods: {
 		  // 方法
 		  commentObtain () {
-		  	this.$http.get(API_PROXY, {
+		  	this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: this.rdId,
 		  			id: this.commentId

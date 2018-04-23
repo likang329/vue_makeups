@@ -54,7 +54,7 @@
 		  // 方法
 		  indexComment ($state) {
 		  	var _this = this
-		  	this.$http.get(API_PROXY, {
+		  	this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: 1002,
        			ie: _this.pagesIndex,
@@ -62,8 +62,8 @@
 		  		}
 		  	})
 		  	.then((res) => {
+		  		console.log(res, '首页点评')
 		  		if (res.data.de.commments.length) {
-		  			console.log(res, '首页点评')
 		  			_this.selectData.listContent = _this.selectData.listContent.concat(res.data.de.commments)
 		  			_this.$store.commit("setList", _this.selectData)
 		  			console.log(_this.$store.state.list, '首页点评列表存入vuex')

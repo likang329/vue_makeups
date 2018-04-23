@@ -109,7 +109,7 @@
 		methods: {
 		  // 方法
 		  tryoutObtain () {
-		  	this.$http.get(API_PROXY, {
+		  	this.$http.get('/api/commonwx/104?', {
 		  		params: {
 		  			rd: 1006,
 		  			id: this.tryoutId

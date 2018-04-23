@@ -219,6 +219,7 @@
 						.img-list {
 							flex: 1;
 							height: 92px;
+							margin-bottom: 14px;
 							margin-right: 10px;
 							overflow: hidden;
 							text-align: center;
