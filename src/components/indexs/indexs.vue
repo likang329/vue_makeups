@@ -92,7 +92,7 @@
 		  // 方法
 		  homeData () {
 		  	var _this = this;
-		  	_this.$http.get('/api/commonwx/104?', {
+		  	_this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1001
 		  		}
@@ -168,7 +168,7 @@
 			}
 		}
 		.search {
-			height: 38px;
+			height: 50px;
 			margin-top: -8px;
 			overflow: hidden;
 			background: #f5f5f5;

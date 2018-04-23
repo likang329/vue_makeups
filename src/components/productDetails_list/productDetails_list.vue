@@ -58,7 +58,7 @@
 		methods: {
 		  // 方法
 		  selectObtain ($state) {
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1010,
 		  			type: this.tabIndex, //tab索引

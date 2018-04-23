@@ -106,7 +106,7 @@
 		  // 方法
 		  productDetailsData () {
 		  	var _this = this
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1011,
 		  			id: _this.productId
@@ -141,6 +141,7 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 	.product-details {
+		-webkit-overflow-scrolling: touch;
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -148,14 +149,15 @@
 		width: 100%;
 		height: 100%;
 		overflow-y: auto;
+		overflow-x: hidden;
 		background: #fff;
 		i {
 			font-style: normal;
 		}
 		.return-wrap {
 			position: fixed;
-			left: 18px;
-			top: 12px;
+			left: 8px;
+			top: 2px;
 			z-index: 12;
 		}
 		.product-information {
@@ -284,13 +286,14 @@
 			}
 			.popup-close {
 				position: fixed;
-				left: 18px;
-				top: 12px;
+				left: 8px;
+				top: 2px;
 				z-index: 31;
 				a {
 					display: block;
 					width: 10px;
 			    height: 18px;
+			    padding: 10px;
 			    /*background: url(/static/img/return.45b7d46.png) no-repeat;*/
 			    /*background-size: 100% 100%;*/
 			    img {

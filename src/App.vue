@@ -45,6 +45,11 @@
 </script>
 
 <style lang="less">
+	#app {
+		width: 100%;
+		max-width: 720px;
+		margin: 0 auto;
+	}
   .footer-tab {
   	position: fixed;
   	left: 0;

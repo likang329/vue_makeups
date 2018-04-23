@@ -66,7 +66,7 @@
 		  // 方法
 		  tryOutObtain () {
 		  	var _this = this;
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1005
 		  		}

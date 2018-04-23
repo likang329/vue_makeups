@@ -44,7 +44,7 @@
 		  // 方法
 		  indexProductsData ($state) {
 		  	var _this = this
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1003,
 		  			ie: this.pagesIndex

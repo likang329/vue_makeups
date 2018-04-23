@@ -121,7 +121,7 @@
 	  			this.$refs.searchContent.scrollIntoView(true)
 	  			this.$refs.infiniteLoading.$emit('$InfiniteLoading:reset')
 	  		}
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1013,
 		  			page: this.pagesIndex,
@@ -218,16 +218,18 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 	.search-input {
+		-webkit-overflow-scrolling: touch;
 		position: fixed;
 		left: 0;
 		top: 0;
 		width: 100%;
 		height: 100%;
+		overflow-x: hidden;
 		overflow-y: auto;
 		background: #fff;
 		z-index: 9;
 		.return-wrap {
-			padding: 6px 0 0 10px;
+			padding: 0;
 		}
 		.search-box {
 			display: flex;
@@ -260,14 +262,14 @@
 					display: block;
 					width: 11px;
 					height: 11px;
-					margin-top: 8px;
+					margin-top: 14px;
 				}
 				.search {
 					flex: 1;
 					display: block;
-					height: 28px;
+					height: 38px;
 					margin: 0 5px;
-					line-height: 28px;
+					line-height: 38px;
 					font-size: 12px;
 				}
 				.scan {
@@ -278,7 +280,7 @@
 				}
 			}
 			.search-button {
-				line-height: 30px;
+				line-height: 38px;
 				padding-right: 10px;
 				font-size: 14px;
 			}
@@ -337,7 +339,7 @@
 			color: #666;
 		}
 		.search-record {
-			margin-top: 46px;
+			margin-top: 56px;
 			h3 {
 				padding-left: 12px;
 				font-size: 16px;

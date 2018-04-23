@@ -68,7 +68,7 @@
 		methods: {
 		  // 方法
 		  commentObtain () {
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: this.rdId,
 		  			id: this.commentId
@@ -96,18 +96,20 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="less">
 	.comment-details {
+		/*-webkit-overflow-scrolling: touch;*/
 		position: fixed;
 		left: 0;
 		top: 0;
-		z-index: 9;
 		width: 100%;
 		height: 100%;
+		overflow-x: hidden;
 		overflow-y: auto;
 		background: #fff;
+		z-index: 9;
 		.return-wrap {
 			position: fixed;
-			left: 18px;
-			top: 12px;
+			left: 8px;
+			top: 2px;
 		}
 		.banner {
 			img {

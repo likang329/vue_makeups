@@ -24,6 +24,7 @@
 		.return-button {
 			width: 10px;
 			height: 18px;
+			padding: 10px;
 			/*background: url(../../../static/image/return.png) no-repeat;*/
 			/*background-size: 100% 100%;*/
 			img {

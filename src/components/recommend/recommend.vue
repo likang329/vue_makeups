@@ -76,7 +76,7 @@
 		  // 获取品牌产品列表数据
 		  recommendObtain ($state) {
 		  	var _this = this;
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1008,
 		  			id: this.seriesId,
@@ -104,7 +104,7 @@
 		  // 获取品牌tab选择数据
 		  recommendClassification () {
 		  	var _this = this
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1007
 		  		}

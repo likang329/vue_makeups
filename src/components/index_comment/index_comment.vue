@@ -54,7 +54,7 @@
 		  // 方法
 		  indexComment ($state) {
 		  	var _this = this
-		  	this.$http.get('/api/commonwx/104?', {
+		  	this.$http.get(API_PROXY, {
 		  		params: {
 		  			rd: 1002,
        			ie: _this.pagesIndex,
